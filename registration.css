@@ -1,3 +1,8 @@
+
+
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -10,7 +15,10 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: radial-gradient(#ac8824 ,#afe7af);
+    /* background-image: radial-gradient(#ac8824 , c:\Users\prian\OneDrive\Desktop\last page\background image.jpg); */
+    background-image: url(https://img.freepik.com/free-photo/still-life-with-scales-justice_23-2149776040.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1716076800&semt=ais_user);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .container {
     max-width: 650px;
@@ -18,7 +26,9 @@
     margin: 0 28px;
     border-radius: 10px;
     overflow: hidden;
-    background: transparent;
+    /* background: transparent;
+     */
+     background-color: rgb(76, 74, 74);
     box-shadow: 0 10px 15px gray;
     backdrop-filter: blur(70px);
   }
@@ -119,7 +129,8 @@
     transition: 0.3s;
   }
   .button-container button:hover {
-    background-image: linear-gradient(to right, #04611a, #07aa71);
+    /* background-image: linear-gradient(to right, #04611a, #07aa71); */
+    background-image: linear-gradient(to right, black, #07aa71);
   }
   
   @media (max-width: 600px) {
