@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
   
@@ -13,11 +14,14 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    /* background-color: rgb(71, 111, 71) ; */
+    background-color: rgb(71, 111, 71) ;
     background-image: radial-gradient(#edd685 ,#81eb81);
-    background-repeat: no-repeat;
-    background-position: center;
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-size: cover; */
+    background-image: url(https://img.freepik.com/free-photo/still-life-with-scales-justice_23-2149776040.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1716076800&semt=ais_user);
     background-size: cover;
+    background-repeat: no-repeat
   }
   
   section {
