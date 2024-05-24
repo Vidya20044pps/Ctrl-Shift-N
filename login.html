@@ -28,7 +28,7 @@
           </label>
           <a href="otp.html" target="_parent">Forget Password</a>
         </div>
-        <button type="button" onclick="registerUser()">Log in</button>
+        <button type="button" onclick="loginUser()">Log in</button>
         <div class="register">
           <p>Don't have an account <a href="registration.html" target="_parent">register</a> </p>
         </div>
@@ -43,11 +43,11 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script>
-      function registerUser() {
+      function loginUser() {
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
         const user = { email, password };
-        fetch('http://localhost:3000/register', {
+        fetch('http://localhost:3001/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -56,9 +56,12 @@
         })
           .then(response => {
             if (response.ok) {
-              console.log('User registered successfully');
+              console.log('User logged in successfully');
+              
+              // Handle successful login, e.g., redirect to dashboard
             } else {
-              console.error('Failed to register user');
+              console.error('Failed to log in user');
+              // Handle failed login, e.g., show error message
             }
           })
           .catch(error => {
